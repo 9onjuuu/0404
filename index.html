@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        font-family: "Noto Sans KR", sans-serif;
+        height: 3700px;
+      }
+
+      .container {
+        width: 1200px;
+        height: 48px;
+      }
+      section {
+        width: 1200px;
+        height: 710px;
+        text-align: center;
+        margin: auto;
+      }
+
+      #home {
+        background-image: url(IMAGE/14pro.png);
+        background-repeat: no-repeat;
+      }
+      #about {
+        background-image: url(IMAGE/air_pod.png);
+        background-repeat: no-repeat;
+      }
+      #skills {
+        background-image: url(IMAGE/mac_pro.png);
+        background-repeat: no-repeat;
+      }
+      #works {
+        background-image: url(IMAGE/iphone.png);
+        background-repeat: no-repeat;
+      }
+      #contact {
+        background-image: url(IMAGE/mac_mini.png);
+        background-repeat: no-repeat;
+      }
+
+      .wrapper {
+        padding-top: 10px;
+        max-width: 1200px;
+        margin: auto;
+        text-align: center;
+        letter-spacing: -0.3px;
+      }
+
+      #home .wrapper,
+      #skills .wrapper,
+      #contact .wrapper {
+        color: #ffffff;
+      }
+
+      #works .wrapper,
+      #about .wrapper {
+        color: black;
+      }
+
+      h1 {
+        font-size: 48px;
+      }
+
+      h2 {
+        margin-top: -30px;
+        font-size: 25px;
+      }
+
+      h3 {
+        margin-top: 30px;
+        font-size: 14px;
+        font-weight: 100;
+        line-height: 1.6;
+      }
+
+      h4 {
+        margin-top: 40px;
+        font-weight: 700;
+        font-size: 17px;
+        color: #2997ff;
+        letter-spacing: 0.4px;
+      }
+
+      h4:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      .btns {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+      }
+
+      .btns .container {
+        position: relative;
+        max-width: 1200px;
+        background-color: rgba(131, 131, 131, 0.5);
+        margin: auto;
+      }
+
+      .btns_menu {
+        display: flex;
+        justify-content: center;
+      }
+
+      .btns_menu .btn {
+        font-size: 14px;
+        font-weight: 500;
+        color: #414141;
+        width: 150px;
+        height: 40px;
+        border-radius: 10px;
+        margin: 4px;
+        cursor: pointer;
+        background-color: rgba(220, 220, 220);
+      }
+      .btns_menu .btn:hover {
+        border: 2px dashed rgb(124, 124, 124);
+        cursor: pointer;
+        font-weight: bolder;
+      }
+
+      button {
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        outline: none;
+      }
+
+      .arrow-up {
+        position: fixed;
+        bottom: 60px;
+        right: 50px;
+        width: 50px;
+        height: 50px;
+        color: white;
+        background-color: #2997ff;
+        border-radius: 50%;
+        opacity: 0;
+        transition: 0.3s;
+      }
+
+      .arrow-up span {
+        font-size: 40px;
+      }
+
+      .arrow-up.show {
+        opacity: 1;
+      }
+
+      .btns .container {
+        background-color: rgba(131, 131, 131, 0);
+        transition: 0.3s;
+      }
+      .btns .container.show {
+        background-color: rgb(189, 189, 189);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="btns">
+      <div class="container">
+        <div class="btns_menu">
+          <button class="btn home">iPhone 14 Pro</button>
+          <button class="btn about">AirPods</button>
+          <button class="btn skills">MacBook Pro</button>
+          <button class="btn works">iPhone SE</button>
+          <button class="btn contact">Mac mini</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="txt">
+      <section id="home">
+        <div class="wrapper">
+          <h1>iPhone 14 Pro</h1>
+          <h2>프로 그 이상. 놀라움 한가득.</h2>
+          <h3>
+            당신이 원래 하던 일을 방해하지 않으면서도 음악, 통화 등 요긴한
+            정보를 그때그때 띄워주는 Dynamic Island. <br />
+            길게 꾹 누르면 음악 제어, AirPods 배터리 잔량 확인 등 다양한 기능을
+            사용할 수 있죠. <br />
+            게다가 iOS 전반에 통합되어 있고 수많은 앱과 연동되기 때문에 꼭
+            필요한 걸 꼭 필요한 순간에 매끄럽게 띄워준답니다. <br />
+            심각한 자동차 충돌 사고 발생 시, 구조 요청이 힘들 때 iPhone이 대신
+            해줍니다.
+          </h3>
+          <h4>&gt; &nbsp; 구매하기</h4>
+        </div>
+      </section>
+      <section id="about">
+        <div class="wrapper">
+          <h1>AirPods</h1>
+          <h2>당신의 귀에 어울리는 맞춤 사운드.</h2>
+          <h3>
+            AirPods Pro가 더욱 풍부한 오디오 경험을 선사하도록 새롭게
+            설계되었습니다. <br />
+            한 차원 더 강력해진 액티브 노이즈 캔슬링 및 외부 소음을 선별적으로
+            줄여주는 적응형 주변음 허용 모드. <br />
+            놀라운 수준의 개인 맞춤형 몰입감을 선사하는 공간 음향. 스와이프로
+            음량을 조절할 수 있게 해주는 터치 제어. <br />
+            그리고 한 번의 충전으로 6시간까지 사용 가능한 배터리 성능의
+            도약까지.
+          </h3>
+          <h4>&gt; &nbsp; 구매하기</h4>
+        </div>
+      </section>
+      <section id="skills">
+        <div class="wrapper">
+          <h1>MacBook Pro</h1>
+          <h2>실행의 힘. 창조의 힘. 한계를 넘어서는 힘.</h2>
+          <h3>
+            막강한 성능의 M2 Pro 또는 M2 Max 덕분에 그 어느 때보다 높은 차원의
+            힘과 효율성을 발휘하는 MacBook Pro. <br />
+            전원에 연결했을 때나 그렇지 않을 때나 탁월한 성능을 선사하고, 이제
+            더욱더 긴 배터리 사용 시간을 자랑하죠. <br />
+            여기에 놀라운 Liquid Retina XDR 디스플레이 그리고 더할 나위 없이
+            다양한 포트까지. <br />
+            MacBook Pro는 그야말로 타의 추종을 불허하는 프로용 노트북입니다.
+          </h3>
+          <h4>&gt; &nbsp; 구매하기</h4>
+        </div>
+      </section>
+      <section id="works">
+        <div class="wrapper">
+          <h1>iPhone SE</h1>
+          <h2>거침없는 파워. 실속 있는 선택.</h2>
+          <h3>
+            iPhone SE의 핵심 브레인은 바로 iPhone 13과 똑같은 초강력 A15 Bionic
+            칩입니다. <br />
+            A15 Bionic은 당신이 하는 거의 모든 일을 향상시켜줍니다. 앱은 눈
+            깜짝할 사이에 실행되고 더 매끄럽게 돌아갑니다. <br />
+            고사양 게임도 부드럽게 구동해주는 엄청난 그래픽 성능까지 선사하죠.
+            <br />
+            iPhone은 첨단 사진 기능들도 구동하기 때문에 얼굴, 장소를 포함한 사진
+            속 모든 것이 가장 아름답게 보이도록 해줍니다.
+          </h3>
+          <h4>&gt; &nbsp; 구매하기</h4>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="wrapper">
+          <h1>Mac mini</h1>
+          <h2>더 야무지게. 더 빠릿하게.</h2>
+          <h3>
+            M2를 탑재한 Mac mini는 더 많은 일들을 더 빠르게 처리하는 데 필요한
+            속도를 갖추고 있습니다. <br />Mac mini에 처음 적용되는 프로용 칩인
+            M2 Pro는 Mac mini를 완전히 새로운 차원으로 끌어올립니다.
+            <br />여기에 모든 상황과 주변기기에 대응 가능한 다양한 포트까지 갖춰
+            어떤 용도에도 최적인 데스크탑이 되어줍니다. <br />어떤 칩 모델을
+            선택하든 말이죠.
+          </h3>
+          <h4>&gt; &nbsp; 구매하기</h4>
+        </div>
+      </section>
+
+      <button class="arrow-up">
+        <span class="material-symbols-outlined"> arrow_upward </span>
+      </button>
+    </div>
+
+    <script>
+      const btnHome = document.querySelector(".home");
+      const sectionHome = document.querySelector("#home");
+      btnHome.addEventListener("click", function () {
+        sectionHome.scrollIntoView({ behavior: "smooth", block: "center" });
+      });
+
+      const btnAbout = document.querySelector(".about");
+      const sectionAbout = document.querySelector("#about");
+      btnAbout.addEventListener("click", function () {
+        sectionAbout.scrollIntoView({ behavior: "smooth", block: "center" });
+      });
+
+      const btnSkills = document.querySelector(".skills");
+      const sectionSkills = document.querySelector("#skills");
+      btnSkills.addEventListener("click", function () {
+        sectionSkills.scrollIntoView({ behavior: "smooth", block: "center" });
+      });
+
+      const btnWorks = document.querySelector(".works");
+      const sectionWorks = document.querySelector("#works");
+      btnWorks.addEventListener("click", function () {
+        sectionWorks.scrollIntoView({ behavior: "smooth", block: "center" });
+      });
+
+      const btnContact = document.querySelector(".contact");
+      const sectionContact = document.querySelector("#contact");
+      btnContact.addEventListener("click", function () {
+        sectionContact.scrollIntoView({ behavior: "smooth", block: "center" });
+      });
+
+      // const arrowUp = document.querySelector(".arrow-up");
+      // document.activeElement("scroll", function () {
+      //   // console.log(window.scrollY);
+      //   if (window.scrollY > 300) {
+      //     arrowUp.classList.add("show");
+      //   } else {
+      //     arrowUp.classList.remove("show");
+      //   }
+      // });
+
+      const arrowUp = document.querySelector(".arrow-up");
+
+      arrowUp.addEventListener("click", function () {
+        sectionHome.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+
+      document.addEventListener("scroll", function () {
+        //console.log(window.scrollY);
+        if (window.scrollY > 300) {
+          arrowUp.classList.add("show");
+        } else {
+          arrowUp.classList.remove("show");
+        }
+      });
+
+      const btnMenu = document.querySelector(".container");
+      document.addEventListener("scroll", function () {
+        if (window.scrollY > 300) {
+          btnMenu.classList.add("show");
+        } else {
+          btnMenu.classList.remove("show");
+        }
+      });
+    </script>
+  </body>
+</html>
